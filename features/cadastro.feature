@@ -7,3 +7,16 @@ Given eu acesso o sistema como "Desconhecido"
 	Then clico no botão "confirmar"
 And uma mensagem "cadastro concluído com sucesso aparece para mim"
 And sou redirecionado para a tela de listagem de vagas 
+
+
+Scenario: Adicionar vagas
+		Given eu acesso o sistema como "Empregador"
+	And meu perfil é de um Headhunter que deseja contratar programadores
+		And o sistema não possui nenhuma vaga cadastrada
+	When acesso a tela de cadastro de vagas
+	Then o formulário de cadastro em etapas aparece para mim
+	And preencho os campos "Título" com "Desenvolvedor Front-End", "Modalidade" com "Híbrido", "Salário" com "4000", "Nível de senioridade" com "Junior", "Modalidade de contratação" como "CLT"
+	Then clico no botão "salvar vaga"
+	And uma mensagem "vaga salva" aparece
+	When acesso a tela de listagem de vagas
+	Then a vaga "Desenvolvedor Front-End" aparece para mim
