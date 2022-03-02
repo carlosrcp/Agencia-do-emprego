@@ -36,4 +36,4 @@ Scenario: Processo seletivo aberto
 Given eu estou na página de inscrição em determinada vaga
 When eu vou para a opção de me inscrever
 Then a opção de inscrição está disponível.
-And eu posso me inscrever
+And eu posso me
