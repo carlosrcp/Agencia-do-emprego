@@ -15,7 +15,6 @@ Scenario: 0 resultados encontrados
 Given eu estou na página de procurar vagas em aberto
 When eu uso a opção de filtros 
 And os filtros escolhidos não me dão nenhuma resposta
-
 Then o sistema me informa de que não foram encontrados resultados
 
 Scenario: Falta de critérios mínimos
@@ -24,3 +23,4 @@ When eu me inscrevo na vaga
 And não atendo critérios mínimos definidos para aquela vaga
 Then o sistema me informa de que eu não posso me inscrever pois não possuo os critérios mínimos.
 And eu não sou inscrito na vaga
+And a vaga não se encontra na listagem de vagas disponíveis
