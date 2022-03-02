@@ -25,7 +25,6 @@ Then o sistema me informa de que eu não posso me inscrever pois não possuo os 
 And eu não sou inscrito na vaga
 And a vaga não se encontra na listagem de vagas disponíveis
 
-
 Scenario: Aplicação bem sucedida
 Given eu estou na página de inscrição em determinada vaga
 When eu me inscrevo na vaga
@@ -37,4 +36,4 @@ Scenario: Processo seletivo aberto
 Given eu estou na página de inscrição em determinada vaga
 When eu vou para a opção de me inscrever
 Then a opção de inscrição está disponível.
-
+And eu posso me inscrever
