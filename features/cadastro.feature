@@ -20,7 +20,6 @@ Scenario: Adicionar vagas
 	And uma mensagem "vaga salva" aparece
 	When acesso a tela de listagem de vagas
 	Then a vaga "Desenvolvedor Front-End" aparece para mim
-    Then
 
 Scenario: Adicionar candidatos a vaga
 		Given eu acesso o sistema como "candidato"
