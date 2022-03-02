@@ -32,3 +32,15 @@ Scenario: Adicionar candidatos a vaga
 	Then clico no botão "Candidatar Vaga"
 	And Aparece um aviso "Cadastro concluído com sucesso"
 	And no banco de dados, na tabela associada a essa vaga, no atributo candidatos, conseguimos ver o meu cadastro, enquanto todos os outros elementos do banco não foram alterados.
+
+Scenario: Filtrar vagas
+		Given eu acesso o sistema como "candidato"
+	And meu perfil é de um desenvolvedor procurando vagas para trabalhar remotamente 
+		And o sistema possui vaga "Desenvolvedor React - Presencial"
+	And o sistema possui vaga "Desenvolvedor React - Remoto"
+	When acesso a tela de vagas
+	Then na aba de listagem de vagas aparece a vaga "Desenvolvedor React - Presencial"
+And também é listado a vaga de "Desenvolvedor React - Remoto"
+When clico no botão referente ao "filtro"
+And preencho o campo "modalidade de trabalho" com a resposta "Remoto"
+Then na aba de listagem de vagas aparece apenas "Desenvolvedor React - Remoto"
