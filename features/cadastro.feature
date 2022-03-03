@@ -49,3 +49,5 @@ Scenario: Filtrar vagas
 Scenario: Scenario exemplo
     Given exemplo
     Then Exemplo
+
+Scenario: Mudancas
