@@ -45,3 +45,7 @@ Scenario: Filtrar vagas
         When clico no botão referente ao "filtro"
         And preencho o campo "modalidade de trabalho" com a resposta "Remoto"
         Then na aba de listagem de vagas aparece apenas "Desenvolvedor React - Remoto"
+
+Scenario: Scenario exemplo
+    Given exemplo
+    Then Exemplo
