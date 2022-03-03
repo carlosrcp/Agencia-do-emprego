@@ -25,6 +25,8 @@ Scenario: Candidato é informado que foi rejeitado
     When: Eu fui fui rejeitado pela empresa para esta vaga
     Then: Eu vejo no status do processo seletivo “Infelizmente você não foi selecionado para esta vaga”
 
+teste desenvolvimento 2
+
 Scenario: Candidato deseja alterar informações dadas ao se candidatar
     Given: eu estou na página de “Acompanhamento do processo seletivo da vaga de “Gerente do Carrefour”
     When: Eu seleciono a opção “Editar informações”
@@ -33,8 +35,13 @@ Scenario: Candidato deseja alterar informações dadas ao se candidatar
     When: Eu altero as informações preenchidas
     And: Eu confirmo as modificações
     Then: Eu vejo minhas informações alteradas
+<<<<<<< HEAD
     Then: exemplo
 
 main teste 1
 
 main teste 2
+=======
+
+teste desenvolvimento 1
+>>>>>>> desenvolvimento
