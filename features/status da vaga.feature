@@ -10,6 +10,11 @@ Scenario: Candidato desiste de uma vaga
     Then: eu volto para a página de “Meus processos seletivos”
     And: eu não vejo o “Gerente do Carrefour”
 
+Scenario: Candidato é informado que foi o processo continua pendente
+    Given: eu estou na página de “Acompanhamento do processo seletivo da vaga de “Gerente do Carrefour”
+    When: O processo seletivoainda está aberto pela empresa para esta vaga
+    Then: Eu vejo no status do processo seletivo “Processo seletivo em aberto”
+
 Scenario: Candidato é informado que foi selecionado
     Given: eu estou na página de “Acompanhamento do processo seletivo da vaga de “Gerente do Carrefour”
     When: Eu fui selecionado pela empresa para esta vaga
