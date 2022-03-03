@@ -36,3 +36,5 @@ Scenario: Candidato deseja alterar informações dadas ao se candidatar
     Then: exemplo
 
 main teste 1
+
+main teste 2
