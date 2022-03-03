@@ -34,3 +34,5 @@ Scenario: Candidato deseja alterar informações dadas ao se candidatar
     And: Eu confirmo as modificações
     Then: Eu vejo minhas informações alteradas
     Then: exemplo
+
+main teste 1
